@@ -1,0 +1,33 @@
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.horizon {
+        // display: flex;
+        // justify-content: center;
+        // flex-wrap: wrap;
+        display: block;
+    }
+    &__item {
+        height: 100%;
+        &-link {
+            height: 100%;
+            font-size: 16px;
+            font-family: "quicksand";
+            font-weight: 400;
+            &.black {
+                color: #222631;
+            }
+        }
+        .list-nolink {
+            @include text(12px, 20px, #222631, none, 400);
+            font-family: "quicksand";
+            &.white {
+                color: #FFFFFF;
+            }
+            &.pd {
+                padding-bottom: 6px;
+            }
+        }
+    }
+}

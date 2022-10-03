@@ -1,0 +1,136 @@
+.header {
+  &__top {
+    background: var(--black-bg);
+    .container {
+        @include size(100%, 42px);
+    }
+    &-left {
+      @include midflex;
+      .support {
+        @include text(14px, 18px, #FFFFFF, none, 400);
+        font-family: "quicksand";
+        padding-right: 16px;
+          display: flex;
+          align-items: center;
+          border-right: 1px solid #FFFFFF;
+          height: 11px;
+      }
+      .hotline {
+        @include text(14px, 18px, #FFFFFF, none, 400);
+        font-family: "quicksand";
+        padding: 0 16px;
+        span {
+          @include text(14px, 18px, #FFFFFF, none, 700);
+          font-family: "quicksand";
+        }
+      }
+    }
+    &-right {
+      @include midflex;
+      p {
+          padding-right: 16px;
+          @include text(14px, 18px, #FFFFFF, none, 400);
+          font-family: "quicksand";
+          
+        }
+        a {
+          padding-right: 16px;
+          display: flex;
+          align-items: center;
+        }
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  &__bottom {
+    .container {
+      @include midflex;
+      padding: 35px 15px;
+      @media (max-width: 992px) {
+          padding: 20px 10px;
+        }
+    }
+    .logo {
+      img {
+        @media (max-width: 992px) {
+            @include size(112.4px, 28px);
+          }
+      }
+      
+    }
+    &-menu {
+      ul {
+        li {
+          a {
+            padding: 0 14px;
+            @include transition(0.7s);
+            overflow: hidden;
+            &:hover {
+                color: var(--yellow-cl);
+                @include transition(0.7s);
+              }
+          }
+        }
+      }
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+    .btnmenu {
+      display: none;
+      @media (max-width: 992px) {
+        display: block;
+        @include size(20.96px, 14.41px);
+        position: relative;
+        left: 1px;
+        cursor: pointer;
+        overflow: hidden;
+        span {
+          display: block;
+          height: 2px;
+          width: 100%;
+          background: var(--black-bg);
+          position: relative;
+          @include transition(0.7s);
+          &::before {
+            @include afterbefore(10.96px, 2px, #222631);
+            top: 5px;
+            display: block;
+          }
+          
+          &::after {
+            @include afterbefore(20.96px, 2px, #222631);
+            top: 5px;
+            display: block;
+          }
+          &::before {
+            width: 20.96px;
+            transform: translateY(0px);
+            transform: translateX(10px);
+          }
+
+          &::after {
+            transform: translateY(5px);
+          }
+        }
+        &.active {
+          span {
+            height: 0;
+
+            &::after {
+              @include transform(rotate(45deg));
+            }
+
+            &::before {
+              transform: translateX(0px);
+              @include transform(rotate(-45deg));
+
+            }
+          }
+        }
+      }
+          
+    }
+  }
+}

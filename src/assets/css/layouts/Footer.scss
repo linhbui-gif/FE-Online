@@ -1,0 +1,108 @@
+.Footer {
+  background: #222631;
+  position: absolute;
+  bottom: -300px;
+  padding-top: 39px;
+  width: 100vw;
+  @media (max-width: 992px) {
+    bottom: -730px;
+  }
+  .menu-footer {
+    padding-bottom: 24.4px;
+    border-bottom: 1px solid #EEEEEE;
+    @media (max-width: 992px) {
+      display: block;
+    }
+    .item {
+      .address {
+        width: 218px;
+        @include text(12px, 20px, #FFFFFF, none, 400);
+          font-family: "quicksand";
+      }
+      .notifi {
+        padding-top: 12px;
+      }
+      .plus, .minus {
+        display: none;
+      }
+      .company {
+        padding-bottom: 12px;
+      }
+  
+      .help {
+        padding-bottom: 14px;
+      }
+  
+      .item__app {
+        padding-bottom: 40px;
+        img {
+          margin-right: 12px;
+        }
+  
+      }
+  
+      .item__bank {
+        width: 175px;
+        display: flex;
+        flex-wrap: wrap;
+  
+        img {
+          padding-right: 12px;
+          padding-bottom: 12px;
+        }
+      }
+      @media (max-width: 992px) {
+        &.item2 {
+          padding-top: 40px;
+        }
+        .title {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          .help {
+            padding-bottom: 0;
+            padding-right: 24px;
+          }
+          .plus {
+            display: block;
+            transition: transform 0.7s ease-in;
+          }
+          
+        }
+        
+        ul {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.7s ease;
+        }
+        &.active {
+          ul {
+            padding-top: 12px;
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+          }
+
+          .plus {
+            display: none;
+          }
+
+          .minus {
+            display: block;
+          }
+        }
+        .item__app {
+          padding-bottom: 0;
+        }
+        .pdhelp {
+          margin-top: 40px;
+        }
+        
+        
+      }
+    }
+  }
+  .copyright-footer {
+    padding-top: 12px;
+    padding-left: 70px;
+  }
+}

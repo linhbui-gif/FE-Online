@@ -1,0 +1,338 @@
+extends includes/layouts/Layout.pug
+
+block pages
+    section.schero 
+        .container 
+            .row.align-item-center
+                .schero__content.col-lg-7
+                    h1.heading Shopdi Connect
+                        span  Lợi nhuận khủng không giới hạn!
+                    .schero__content-desc 
+                        p.desktop Từ ngày 01/09/2022, nhận ngay lợi nhuận không giới hạn khi giới thiệu thành công người dùng tải ứng dụng Shopdi.
+                        p.desktop Giới thiệu bạn bè, nhận thưởng hấp dẫn và lan tỏa giá trị thực đến cộng đồng của bạn
+                        p.mobile Nhận ngay lợi nhuận lên tới 25% không giới hạn khi giới thiệu thành công người dùng click xem giá bí mật và giá giảm không giới hạn tại Shopdi. Giới thiệu càng nhiều, thu nhập càng khủng
+                        
+                    +Button({ size: 'small-middle yellow', title: 'Trở thành shopdi connector ngay!' })
+                .schero__img.col-lg-5
+                    img(src="./assets/images/phone.png" alt="Shopdi")
+    
+    section.scbenefit 
+        .container
+            p.titletop Lợi ích 
+            h2.heading2 Tại sao bạn nên trở thành một 
+                span.color-gradient Shopdi Connector
+            .scbenefit__wrap 
+                .scbenefit__wrap-item
+                    .row 
+                        .content.col-lg-8
+                            h3.title-hd.color-gradient Giá trị thực cho cộng đồng của bạn
+                            span.text-section Shopdi là nền tảng Thương mại Điện tử Thế hệ Mới dành riêng cho sản phẩm cao cấp và sản phẩm phiên bản giới hạn. Thông qua cơ chế giá bí mật, giá bán của các sản phẩm trên Shopdi được quyết định bởi số lượng người quan tâm. Các sản phẩm được bán trên nền tảng thương mại điện tử Shopdi là hàng sản xuất chính hãng.
+
+                        .img.col-lg-8
+                            img(src="./assets/images/benefit1.png" alt="Shopdi")
+
+                .scbenefit__wrap-item
+                    .row.flex-row-reverse
+                        .content.col-lg-8
+                            h3.title-hd.color-gradient Lợi nhuận hấp dẫn
+                            span.text-section Nhận ngay lợi nhuận không giới hạn khi giới thiệu thành công người dùng click xem giá bí mật và giá giảm không giới hạn tại Shopdi. Giới thiệu càng nhiều, thu nhập càng khủng.
+
+                        .img.col-lg-8
+                            img(src="./assets/images/benefit2.png" alt="Shopdi")
+
+                .scbenefit__wrap-item
+                    .row
+                        .content.col-lg-8
+                            h3.title-hd.color-gradient Nhiều phần thưởng hơn
+                            .content-wrap
+                                .content__list.listitem
+                                    img(srcset="./assets/images/bullet.png 2x" alt="Shopdi")
+                                    p.desc.text-section Nhận giải thưởng lên đến 30 triệu đồng mỗi tháng khi tham gia vào các chương trình đường đua F1
+
+                                .content__list.listitem
+                                    img(srcset="./assets/images/bullet.png 2x" alt="Shopdi")
+                                    p.desc.text-section Tham gia các sự kiện độc quyền dành cho các Shopdi Connectors với nhiều phần quà hấp dẫn.
+
+                        .img.col-lg-8
+                            img(src="./assets/images/benefit3.png" alt="Shopdi")
+
+    section.scpolicy 
+        .container 
+            .scpolicy__content 
+                .row 
+                    .scpolicy__content-left.col-lg-6 
+                        p.titletop Chính sách 
+                        h2.heading2 Chính sách 
+                        h2.heading2 Shopdi Connector
+                    .scpolicy__content-right.col-lg-6 
+                        p.text-section Tỷ lệ hoa hồng lên đến 25%. Không giới hạn mức thu nhập bạn có thể kiếm được
+                        a(href="#").link.seemore 
+                            span Xem thêm chi tiết
+
+            .scpolicy__table
+                table.table
+                    tr.color-yellow
+                        th Connector
+                        th Basic
+                        th Gold
+                        th Diamond
+                        th Platinum
+                    tr
+                        td Mức thưởng
+                        td 10%
+                        td 15%
+                        td 20%
+                        td 25%
+                    tr 
+                        td Số người đã giới thiệu
+                        td 
+                        td 300
+                        td 500
+                        td 700
+                    tr 
+                        td Doanh thu click/ tháng
+                        td 
+                        td 200.000.000
+                        td 500.000.000
+                        td 700.000.000
+
+    section.scregister 
+        .container 
+            p.scregister__title.titletop Đăng ký
+            h2.heading2 Nhận thưởng với 3 bước vô cùng dễ dàng
+            .scregister__card 
+                
+                    .scregister__card-item 
+                        .box 
+                        .content 
+                            p.title.text-gradient Đăng ký để trở thành Shopdi Connector
+                            .content__list.listitem 
+                                img(srcset="./assets/images/bullet.png 2x" alt="Shopdi")
+                                p.desc Truy cập 
+                                    span APP Store 
+                                    | hoặc 
+                                    span CH Play 
+                                    | để download ứng dụng Shopdi
+                            .content__list.listitem 
+                                img(srcset="./assets/images/bullet.png 2x" alt="Shopdi")
+                                p.desc Truy cập 
+                                    span Dashboard Shopdi Connector 
+                                    | để nhận mã giới thiệu và theo dõi tiến độ các chương trình.
+                        p.number 01
+                    
+                    .scregister__card-item
+                        .box 
+                        .content.card
+                            p.title.text-gradient Sao chép và chia sẻ đường link giới thiệu của bạn
+                            span Copy ID Mã giới thiệu , Link giới thiệu , Hoặc chia sẻ mã QR của bạn đến người được giới thiệu
+                        p.number 02
+
+                    .scregister__card-item 
+                        .box 
+                        .content.card
+                            p.title.text-gradient Nhận thưởng lên đến 25%
+                            span  Khi người dùng tạo tài khoản bằng liên kết giới thiệu của bạn và sử dụng xu để click xem giá bí mật/giá giảm không giới hạn, bạn sẽ nhận được thưởng từ mỗi giao dịch họ thực hiện. Bạn có thể chia sẻ phần trăm lợi nhuận với người được giới thiệu. 
+                        p.number 03
+
+    section.scchap 
+        .container 
+            p.scchap__title.titletop Chương trình 
+            h2.heading2 SHOPDI CHIÊU ĐÃI NGƯỜI DÙNG NHIỀU CHƯƠNG TRÌNH HẤP DẪN
+            p.scchap__desc ĐƯỢC CẬP NHẬT THƯỜNG XUYÊN
+            .scchap__img 
+                img(srcset="./assets/images/cup.png 2x" alt="Shopdi")
+            .scchap__rate 
+                .allmenu.d-flex
+                    +Button({ size: 'small yellowlight', title: 'Đường đua Shopdi Connector', active: 'active'})
+                    +Button({ size: 'small yellowlight', title: 'Thánh chốt đơn' })
+                    +Button({ size: 'small yellowlight', title: 'Sự kiện tháng 7' })
+                p.scchap__rate-desc Đường đua Shopdi Connector được cập nhật mỗi tháng. Hãy cùng nhìn lại các tay đua Shopdi Connector giai đoạn 1/9 - 30/9/2022 nhé!
+                .scchap__rate-table.active 
+                    .scchap-row.d-flex.align-item-center.justify-content-between 
+                        .left.d-flex.align-item-center.justify-content-between
+                            p.title-row Hạng 
+                            p.title-row Người tham gia 
+                        p.title-row Phần thưởng
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/Group170.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user123
+                                p.fontuser 2.000.000 shopdi 
+                        .fontuser Iphone 14 Pro max
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number2.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user23
+                                p.fontuser 1.800.000 shopdi 
+                        .fontuser Iphone 14 Pro
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(src="./assets/images/number3.png" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user3
+                                p.fontuser 1.800.000 shopdi 
+                        .fontuser Iphone 14
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number4.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user13
+                                p.fontuser 1.780.000 shopdi 
+                        .fontuser 8.000.000 VND
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number5.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user928
+                                p.fontuser 1.780.000 shopdi 
+                        .fontuser 8.000.000 VND
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number6.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user1223
+                                p.fontuser 1.780.000 shopdi 
+                        .fontuser 8.000.000 VND
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number7.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user12443
+                                p.fontuser 1.750.000 shopdi 
+                        .fontuser 8.000.000 VND
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number8.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user19923
+                                p.fontuser 1.680.000 shopdi 
+                        .fontuser 8.000.000 VND
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number9.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user12013
+                                p.fontuser 1.590.000 shopdi 
+                        .fontuser 8.000.000 VND
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/number10.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user19923
+                                p.fontuser 1.680.000 shopdi 
+                        .fontuser 8.000.000 VND
+
+                .scchap__rate-table
+                    .scchap-row.d-flex.align-item-center.justify-content-between 
+                        .left.d-flex.align-item-center.justify-content-between
+                            p.title-row Hạng 
+                            p.title-row Người tham gia 
+                        p.title-row Phần thưởng
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/Group170.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user123
+                                p.fontuser 2.000.000 shopdi 
+                        .fontuser Iphone 14 Pro max
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(src="./assets/images/number3.png" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user3
+                                p.fontuser 1.800.000 shopdi 
+                        .fontuser Iphone 14
+
+                .scchap__rate-table
+                    .scchap-row.d-flex.align-item-center.justify-content-between 
+                        .left.d-flex.align-item-center.justify-content-between
+                            p.title-row Hạng 
+                            p.title-row Người tham gia 
+                        p.title-row Phần thưởng
+                    .scchap-row.d-flex.align-item-center.justify-content-between
+                        .left.d-flex.align-item-center.justify-content-between
+                            img(srcset="./assets/images/Group170.png 2x" alt="Shopdi").imgage1
+                            .user-row 
+                                p.fontuser @user123
+                                p.fontuser 2.000.000 shopdi 
+                        .fontuser Iphone 14 Pro max
+
+            a(href="#").link.seemore
+                span ...
+            p.scchap__join Ưu đãi hấp dẫn, tham gia ngay
+            .scchap__card
+                .row 
+                    .scchap__card-item.col-lg-6
+                        +CardWithLink({ src: './assets/images/thumnail.png', alt: 'Shopdi', title: 'SHOPDI CHÀO BẠN MỚI - TẢI APP NHẬN SHOPDIXU! ', text: 'Số lượng có hạn! Bạn mới gia nhập Shopdi nhận ngay 15k Shopdi Xu (tương đương 15k) khi hoàn thiện thông tin cá nhân tại tài khoản Shopdi.', date: 'Ngày hết hạn: 30/12/2022', link: 'Xem chi tiết'})
+                    .scchap__card-item.col-lg-6
+                        +CardWithLink({ src: './assets/images/thumnail.png', alt: 'Shopdi', title: 'MƯA GIÁ 0Đ  ', text: 'Cơn mưa giá 0Đ ngang qua Shopdi và chưa có dấu hiệu dừng lại! Cơ hội vừa sở hữu cực phẩm giá 0Đ, vừa nhận giải thưởng tiền mặt tương đương giá gốc sản phẩm, còn chần chờ gì mà không “ùa vào săn giá” ngay và luôn bạn ơi!', date: 'Ngày hết hạn: 30/12/2022', link: 'Xem chi tiết'})
+                        
+    section.scfaq 
+        .container 
+            .row 
+                .scfaq__content.col-lg-6 
+                    p.scfaq__content-first.titletop Q&amp;A 
+                    h2.heading2 Câu hỏi thường gặp 
+                    p.scfaq__content-desc.text-section.desktop Bạn có câu hỏi khác? Hãy truy cập Trung tâm hỗ trợ của Shopdi hoặc gửi phản hồi trực tiếp 
+                        a(href="#") tại đây
+                    p.scfaq__content-desc.text-section.mobile Nếu bạn có câu hỏi khác? Hãy xem thêm các câu trả lời khác về 
+                        a(href="#") Cố vấn Shopdi Connector
+                .scfaq__question.col-lg-6 
+                    .scfaq__question-item 
+                        .accordion-link.d-flex.align-item-center.justify-content-between
+                            .content.d-flex.align-item-center.justify-content-between
+                                p.number 01
+                                p.title  Chương trình Shopdi Connect là gì?
+                            img(srcset="./assets/images/plus.png 2x" alt="Shopdi").plus
+                            img(srcset="./assets/images/minus.png 2x" alt="Shopdi").minus
+                        .answer 
+                            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum similique eveniet autem, accusantium quae voluptatem facere reprehenderit impedit sit ullam modi a praesentium, repellat suscipit culpa quibusdam asperiores illo saepe?
+
+                    .scfaq__question-item 
+                        .accordion-link.d-flex.align-item-center.justify-content-between
+                            .content.d-flex.align-item-center.justify-content-between
+                                p.number 02
+                                p.title  Chương trình Shopdi Connect là gì?
+                            img(srcset="./assets/images/plus.png 2x" alt="Shopdi").plus
+                            img(srcset="./assets/images/minus.png 2x" alt="Shopdi").minus
+                            
+                        .answer 
+                            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum similique eveniet autem, accusantium quae voluptatem facere reprehenderit impedit sit ullam modi a praesentium, repellat suscipit culpa quibusdam asperiores illo saepe?
+
+                    .scfaq__question-item 
+                        .accordion-link.d-flex.align-item-center.justify-content-between
+                            .content.d-flex.align-item-center.justify-content-between
+                                p.number 03
+                                p.title  Chương trình Shopdi Connect là gì?
+                            img(srcset="./assets/images/plus.png 2x" alt="Shopdi").plus
+                            img(srcset="./assets/images/minus.png 2x" alt="Shopdi").minus
+                        .answer 
+                            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum similique eveniet autem, accusantium quae voluptatem facere reprehenderit impedit sit ullam modi a praesentium, repellat suscipit culpa quibusdam asperiores illo saepe?
+
+    section.scdown 
+        .container 
+            .row
+                .scdown__iphone.col-lg-4 
+                    img(srcset="./assets/images/iPhone.png 5x" alt="Shopdi")
+                .scdown__content.col-lg-8 
+                    p.scdown__content-title.titletop Tải xuống 
+                    h2.heading2 LAN TỎA GIÁ TRỊ THỰC ĐẾN CỘNG ĐỒNG CỦA BẠN
+                    span.text-section.desc Giới thiệu bạn bè, nhận thưởng hấp dẫn và lan tỏa giá trị thực đến cộng đồng của bạn với các sản phẩm chất lượng tại Shopdi
+                    .scdown__content-app 
+                        .btnapp.d-flex.align-item-center
+                            .img.d-flex.align-item-center
+                                img(srcset="./assets/images/ggplay.png 2x" alt="Shopdi")
+                            .content 
+                                p Get it on 
+                                span Google Play 
+                        .btnapp.d-flex.align-item-center
+                            .img.d-flex.align-item-center
+                                img(src="./assets/images/apple.png" alt="Shopdi")
+                            .content 
+                                p Download on the
+                                span App Store 
+
+                    
+                

@@ -1,0 +1,48 @@
+include ../common/data.pug
+
+include ../components/Button.pug
+include ../components/ListItem.pug
+include ../components/CardImg.pug
+
+//- include ../containers/Country
+//- //include ../containers/ProfileCard.pug
+//- //include ../containers/ProfileCardMobile.pug
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Shopdi
+        block head
+
+        //- link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+        //- link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css")
+
+        //- BOOTSTRAP
+        //- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        //- CSS
+        link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
+
+        //- font
+        <link rel="stylesheet" href="src/assets/js/fonts.css">
+
+        //- Favicon
+        //- link(rel="icon" type="image/png" href="https://proxy6.net/static/img/favicon.png")
+
+
+
+    body
+        include Header.pug
+        include Navigation.pug
+        main
+          block pages
+        //- +ListGroupComponent({ className:'payment-method justify-content-center flex-wrap', type:'horizon', isImage:true, array: paymentMethod })
+        include Footer.pug
+        //- Java Script
+        script(src="./assets/js/jquery.min.js")
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous')
+        script(src="./assets/js/main.js")

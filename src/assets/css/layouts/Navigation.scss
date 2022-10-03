@@ -1,0 +1,117 @@
+.Navigation {
+  @include visible(0);
+    width: 100vw;
+    position: fixed;
+    background: #FFFFFF;
+    top: 52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include transform(initial);
+    z-index: 300;
+    @include transition(0.7s);
+  
+    ul {
+      flex-direction: column;
+      position: absolute;
+      left: 16px;
+      // top: -28px;
+  
+      li {
+        margin: 32px auto;
+  
+        a {
+          @include text(16px, 20px, #222631, none, 400);
+          font-family: "quicksand";
+          letter-spacing: -0.02em;
+          position: relative;
+  
+          &::after {
+            @include afterbefore(343px, 4px, #222631);
+            top: 100%;
+            left: 0%;
+            @include transform(scaleX(0));
+            @include transform-origin(left center);
+            @include transition(0.7s);
+          }
+  
+          &:hover {
+            font-weight: 600;
+  
+            &::after {
+              @include transform(scaleX(1));
+              @include transform-origin(left center);
+              @include transition(0.7s);
+            }
+          }
+        }
+      }
+    }
+  
+    .other {
+      position: absolute;
+      top: 430px;
+      left: 16px;
+  
+      .download {
+        display: flex;
+        padding-bottom: 16px;
+  
+        p {
+          @include text(14px, 18px, #222631, none, 400);
+            font-family: "quicksand";
+        }
+  
+        img {
+          padding: 0 14px;
+        }
+      }
+  
+      .otherh {
+        align-items: center;
+        .desc {
+          @include text(14px, 18px, #222631, none, 400);
+            font-family: "quicksand";
+            &.support {
+              display: flex;
+                align-items: center;
+                border-right: 1px solid #000000;
+                height: 11px;
+                padding-right: 16px;
+            }
+            &.hotline {
+              display: flex;
+              align-items: center;
+              padding-left: 16px;
+              span {
+                font-weight: 700;
+              }
+            }
+        }
+        
+        
+        
+        // .desc {
+        //   display: flex;
+        //   align-items: center;
+        //   border-right: 1px solid #222631;
+        //   color: #222631;
+  
+        //   span {
+        //     color:#222631;
+        //   }
+  
+        //   &:last-child {
+        //     border-right: 0;
+  
+        //   }
+        // }
+  
+  
+      }
+    }
+  
+    &.active {
+      @include visible(1);
+    }
+}

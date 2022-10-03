@@ -1,0 +1,10 @@
+mixin CardWithLink({ className = '' , src , alt, title, text, date, link})
+    .cardImg
+        img(src=`${src}` alt=`${alt}`)
+        .cardImg__body
+            p.cardImg__body-title= title
+            p.cardImg__body-text= text
+            .cardImg__body-desc.d-flex.align-item-center.justify-content-between
+                p.date= date
+                a(href="#").link.seemore
+                    span= link

@@ -1,0 +1,12 @@
+//- styleLinkClass: color
+//- type: horizon(row)
+
+mixin ListItem({className = '', type = '', styleLinkClass, array = []}, horizon)
+    ul.list(class=`${className ? className : ''}${type}`)
+        each item in array 
+            if horizon 
+                li.list__item 
+                    p(class=`${className ? className : ''}list-nolink`)= item.title
+            else
+                li.list__item 
+                    a(href=`#` class=`${styleLinkClass ? styleLinkClass : ''} list__item-link`)= item.title

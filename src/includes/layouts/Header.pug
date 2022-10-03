@@ -1,0 +1,45 @@
+header.header
+    .header__top 
+        .container.d-flex.align-item-center.flex-wrap.justify-content-between
+            .header__top-left.d-flex.align-item-center.flex-wrap.justify-content-between
+                p.support Hỗ trợ
+                p.hotline Hotline: 
+                    span 1900 6789
+            .header__top-right.d-flex.align-item-center.flex-wrap.justify-content-between
+                p Download App 
+                a(href="#")
+                    img(srcset="./assets/images/apple.png 2x" alt="Shopdi")
+                a(href="#")
+                    img(srcset="./assets/images/robot.png 2x" alt="Shopdi")
+
+    .header__bottom 
+        .container.d-flex.align-item-center.flex-wrap.justify-content-between
+            a(href="home.html").logo
+                img(srcset="./assets/images/logo.png 2x" alt="Shopdi")
+
+            .header__bottom-menu
+                +ListItem({styleLinkClass: 'black', array: dataListItem})
+            .btnmenu 
+                span
+
+    
+
+//- header.Header
+//-     .container
+//-         .Header-top.d-flex.align-items-center.flex-wrap
+//-             .Header-top-logo
+//-                 a(href="#").logo
+//-                    |PROXY
+//-                    span.font-weight-bold 6
+//-                    | .net
+//-             .Header-top-list
+//-                 +ListGroupComponent({ styleLinkClass: 'orange text-uppercase', type:'horizon ' ,array: dataListItemgroup})
+//-             .Header-top-language.mr-4
+//-                 .btn-group
+//-                     a.btn.setlang_btn(href='/ru/faq')
+//-                         span.flag.ru
+//-                     a.btn.setlang_btn.active(href='/en/faq')
+//-                         span.flag.us
+//-             .Header-top-button.d-flex
+//-                 +Button({ iconFont:true, classIcon:'fa-sign-out', className:'mr-3', size: 'default small-middle', title: 'Sign In' })
+//-                 +Button({ size: 'small-middle orange', title: 'Register' })

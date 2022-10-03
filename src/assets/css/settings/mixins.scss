@@ -1,0 +1,105 @@
+@mixin centerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  width: unset !important;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+}
+
+@mixin ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@function color($color) {
+  @return var(--#{$color});
+}
+
+// responsive
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$xs-min: 768px; // KHÔNG THAY ĐỔI
+$sm-min: 992px; // KHÔNG THAY ĐỔI
+$md-min: 1200px; // KHÔNG THAY ĐỔI
+$lg-min: 1600px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 1); // Small Mobile
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Tablet
+$md-max: ($md-min - 1); // Desktop
+$lg-max: ($lg-min - 1); // Large Desktop
+
+
+// my mixin
+@mixin transform($args) {
+  transform: $args;
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+}
+
+@mixin transition($args) {
+  transition: $args;
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+}
+
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin text($font-size, $line-height, $color, $text-transform, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  text-transform: $text-transform;
+  font-weight: $font-weight;
+}
+
+@mixin midflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin afterbefore ($width: $width, $height: $height, $background: $background) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
+  background: $background;
+}
+
+@mixin visible($param: 1) {
+  @if $param ==1 {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @else {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@mixin transform-origin($args) {
+  transform-origin: $args;
+  -webkit-transform-origin: $args;
+  -moz-transform-origin: $args;
+  -ms-transform-origin: $args;
+  -o-transform-origin: $args;
+}
