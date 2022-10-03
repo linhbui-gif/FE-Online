@@ -1,0 +1,24 @@
+header.header
+    .header__top.horizon-center 
+        .container.horizon 
+            .header__top-left
+                span 
+                    | Hỗ trợ 
+                span 
+                    | |  Hotline: 1900 6789  
+            .header__top-right
+             span 
+              | Download App
+             a(href="#")
+              img(src="./assets/images/apple.png" alt="apple")
+             a(href="#")
+              img(src="./assets/images/android.png" alt="android")
+    .header__bottom
+     .container.horizon 
+      a(href="#").logo.horizon-center
+       img(src="./assets/images/logo.png", alt="shopdi__logo")
+      .btnmenu
+        span
+      .header__bottom-list
+        +ListGroupComponent({className:"horizon list-item-group ",type:"",  array :dataNavigationShopdi})    
+

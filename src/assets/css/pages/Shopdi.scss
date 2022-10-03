@@ -1,0 +1,141 @@
+.banner {
+    padding-top: 215px;
+    padding-bottom: 215px;
+    background-image: url(../images/banner_bg.jpg);
+    background-size: cover;
+    @media (max-width: 992px){
+        padding-top:140px;
+        padding-bottom: 50px;
+    }
+
+    &__left {
+        .banner__title {
+            @include text(80px,'Quicksand',88px,var(--mine-shaft),capitalize,700);
+            margin-bottom: 30px;
+            margin-top: 0;
+            @media (max-width: 992px){
+                @include text(40px,'Quicksand',60px,var(--mine-shaft),capitalize,700);
+                margin-bottom: 0;
+            }
+
+        }
+
+        .banner__text {
+            @include text (24px,'Quicksand',36px,var(--mine-shaft),none,normal);
+            @media (max-width: 992px){
+                display: none;
+            }
+            
+        }
+        .banner__text-sm{
+            display: none;
+            @media (max-width: 992px){
+                display: block;
+            }
+            &-p1{
+                @include text (40px,'Quicksand',60px,var(--mine-shaft),none,normal);
+               
+            }
+            &-p2{
+                @include text (24px,'Quicksand',36px,var(--mine-shaft),none,normal); 
+            }
+        }
+
+        .banner__btn {
+            @include text(18px,'Quicksand',auto,#000,uppercase,600);          
+            margin-top: 25px;
+            display: inline-block;       
+            background-color: #fdd116;
+            width: max-content;
+            padding: 16px;                    
+            border-radius: 5px;
+            @media (max-width: 992px){
+                font-size: 16px;
+            }
+            
+
+        }
+    }
+    &__right{
+        &-imgWraper{
+           
+            
+            img{
+               width: 100%;
+            }
+        }
+    }
+    .row{
+        width: 100%;
+    }
+}
+
+.connector{
+    padding-top: 180px;
+    padding-bottom: 210px;
+    background-color: #222631;
+    @media (max-width: 992px){
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    &__top{
+        
+ 
+        &-titlesm{
+            @include text(18px,'Quicksand',23px,#f0f0f0,uppercase,700,);
+        }
+        &-titlelg{
+            @include text(60px,'Quicksand',72px,white,none,400,);
+            @media (max-width: 992px){
+                font-size: 36px;
+                line-height: 48px;
+                text-align: center;
+            }
+            &.--bold{
+                font-weight: 700;
+                color: #f6c102;
+            }
+            
+        }
+    }
+    &__bottom{
+        &-item{
+            margin-bottom: 105px;
+            align-items: center;
+            flex-wrap: nowrap;
+            @media (max-width: 992px){
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+            
+           
+            .bottom__item-left{
+                @media (max-width: 992px){
+                    order: 2;
+                }
+                span{
+                    @include text(32px,'Quicksand',38.4px,#f6c102,none,700,);
+                    display: block;
+                    margin-bottom: 32px;
+                    @media (max-width: 992px){
+                        font-size: 28px;
+                    }
+                }
+                p{
+                    @include text(24px,'Quicksand',36px,#C2C2C2,none,400,);
+                }
+            }
+            .bottom__item-right{
+                @media (max-width: 992px){
+                    order: 1;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        
+
+    }
+}
