@@ -1,0 +1,19 @@
+//- DataTypes
+//- Classname: String
+//- src="String";
+//- alt="string";
+//- title="string";
+//- text="String";
+//- date="String";
+//- link="String";
+
+mixin CardComponentCustom({ className = '' , src , alt, title, text, date, link})
+    .cardImages
+        img(src=`${src}` alt=`${alt}`)
+        .cardImages-body
+            p.cardImages-body-title= title
+            p.cardImages-body-text= text
+            .cardImages-body-description
+                p.date= date
+                a(href="#").link.details
+                    span= link

@@ -1,0 +1,50 @@
+.policy {
+    padding: 180px 0;
+    font-family: $primary-font;
+    &-details {
+        .policy-details-title {
+            p:first-child {
+                font-size: 18px;
+                font-weight: 700;
+                color:  #222631;
+               
+               }
+               p:nth-child(2) {
+                font-size: 60px;
+                font-weight: 400;
+                color:#222631;
+               }
+            p:nth-child(3) {
+                font-size: 24px;
+                font-weight: 400;
+            }
+            a{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+    }
+    &-rankings {
+        margin-top: 144px;
+    }
+}
+
+.table {
+    width: 100%;
+    border: none;
+    &-content {
+        &-title {
+            background-color: #FDD116;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+           
+        }
+        &-details {
+            font-size: 18px;
+            
+            text-align: center;
+        }
+    }
+}

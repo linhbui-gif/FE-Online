@@ -1,0 +1,45 @@
+header.header 
+    .header-top 
+        .container 
+            .header-top-content 
+                .top-content-left 
+                    span Hỗ Trợ
+                    span |
+                    span Hotline: 
+                    span 19006789
+                .top-content-right 
+                    .right-info 
+                        span Download App 
+                    .right-store 
+                        a(href="")
+                            img(src='./assets/images/android.png')
+                        a(href="") 
+                            img(src='./assets/images/ios.png')
+    .header-bottom
+        .container 
+            .header-bottom-content
+                .content-logo 
+                      a(href="/home.html").logo
+                         img(src='./assets/images/Logo.png')
+                .content-list 
+                    +ListGroupComponent1({ styleLinkClass: '', type:'horizon' ,array: dataListItemgroup1})
+        .header-bottom-details
+            .container 
+                .row 
+                    .col-lg-7.col-md.col-sm
+                        .details-info 
+                             h1 Shopdi Connect 
+                             p  T&#x1EEB; ng&agrave;y 01/09/2022, nh&#x1EAD;n ngay l&#x1EE3;i nhu&#x1EAD;n kh&ocirc;ng gi&#x1EDB;i h&#x1EA1;n khi gi&#x1EDB;i thi&#x1EC7;u th&agrave;nh c&ocirc;ng ng&#x1B0;&#x1EDD;i d&ugrave;ng t&#x1EA3;i &#x1EE9;ng d&#x1EE5;ng Shopdi.<br>
+														
+                                | Gi&#x1EDB;i thi&#x1EC7;u b&#x1EA1;n b&egrave;, nh&#x1EAD;n th&#x1B0;&#x1EDF;ng h&#x1EA5;p d&#x1EAB;n v&agrave; lan t&#x1ECF;a gi&aacute; tr&#x1ECB; th&#x1EF1;c &dstrok;&#x1EBF;n c&#x1ED9;ng &dstrok;&#x1ED3;ng c&#x1EE7;a b&#x1EA1;n
+                             +Button({ 
+                                        size: 'middle yellowPrimary',
+                                        type: 'button',
+                                        dataToggle: "modal",
+                                        dataTarget: ".bd-example-modal-sm",
+                                     
+                                        title: 'TRỞ THÀNH SHOPDI CONNECTOR NGAY!'
+                                                 })
+                    .col-lg-5.col-md.col-sm
+                       .details-picture 
+                          img(src="./assets/images/iconNFT.png", alt="")

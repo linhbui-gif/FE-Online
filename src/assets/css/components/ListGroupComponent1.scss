@@ -1,0 +1,25 @@
+.list-item-group {
+  margin-bottom: 0 ;
+  &.list-style-disc {
+    list-style: disc;
+  }
+  &.horizon {
+    display: flex;
+    li{
+      margin-right: 2rem;
+    }
+  }
+  .list-item {
+    .list-item-link {
+      font-size: 16px;
+      font-weight: 400;
+      color: #222631;
+      &.text-uppercase {
+        text-transform: uppercase;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
